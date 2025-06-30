@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Heart, Users, Settings } from "lucide-react";
+
 
 export default function About() {
   return (
@@ -27,8 +29,61 @@ export default function About() {
               is inclusive—serving everyone regardless of background or ability.
             </p>
           </div>
-        </motion.div>
-      </div>
-    </section>
+
+          {/* Feature boxes section */}
+          <div className="mt-16 space-y-6">
+            <motion.div
+              className="flex items-start space-x-4 p-6 bg-gray-900 rounded-xl border border-gray-800 hover:border-gray-700 transition-all"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+            >
+              <Heart className="h-8 w-8 text-red-500 flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-2">Social Impact</h3>
+                <p className="text-gray-300">
+                  Using technology to solve real-world problems and create positive change in communities.
+                </p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              className="flex items-start space-x-4 p-6 bg-gray-900 rounded-xl border border-gray-800 hover:border-gray-700 transition-all"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <Users className="h-8 w-8 text-blue-500 flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-2">Accessibility</h3>
+                <p className="text-gray-300">
+                  Ensuring digital solutions are inclusive and usable by people of all abilities.
+                </p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              className="flex items-start space-x-4 p-6 bg-gray-900 rounded-xl border border-gray-800 hover:border-gray-700 transition-all"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
+            >
+              <Settings className="h-8 w-8 text-green-500 flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-2">Automation</h3>
+                <p className="text-gray-300">
+                  Leveraging data science to automate tasks and create tools that make work more efficient.
+                </p>
+              </div>
+            </motion.div>
+          </div>
+
+
+         </motion.div>
+       </div>
+     </section>
   );
 }
