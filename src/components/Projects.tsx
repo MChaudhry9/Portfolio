@@ -5,10 +5,19 @@ import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { RiExternalLinkLine } from "react-icons/ri";
 import Link from "next/link";
+import { Star } from "lucide-react";
 
 const projects = [
   {
     name: "Buddy Walk: An AI-Powered Personalized Travel Assistant App",
+    mainConcepts: [
+                    "Assistive Technology",
+                    "Customer Discovery",
+                    "Accessibility",
+                    "AI",
+                    "Multimodal",
+                    "LLMs"
+                  ],
     techStack: [
       "Computer Vision",
       "AI",
@@ -35,6 +44,13 @@ const projects = [
   },
   {
     name: "PropertyIntel: Uncover Hidden Real Estate Insights",
+mainConcepts: [
+                "Data Transparency",
+                "Real Estate",
+                "Public Data",
+                "REST API",
+                "Social Good",
+              ],
     techStack: [
       "Flask",
       "React",
@@ -56,6 +72,12 @@ const projects = [
   },
   {
     name: "FoodScrap Drop-Off",
+mainConcepts: [
+                "Accessibility",
+                "Public Data",
+                "Social Good",
+                "Data Science"
+              ],
     techStack: [
       "React", 
       "NYC Open Data API", 
@@ -79,6 +101,11 @@ const projects = [
   },
   {
     name: "Swebay: An E-Bidding Platform",
+mainConcepts: [
+                "Online Bidding",
+                "Fraud Prevention",
+                "Scalable App"
+              ],
     techStack: ["Django", "Python", "HTML", "CSS", "Javascript", "Git"],
     description:
       "Collaborated in a team of 4 to create a secure online bidding platform where users can list items, place bids, and complete transactions. Built with multiple user roles (e.g., Registered Users, Super Users, VIPs) and includes features like bot-prevention, complaint handling, user ratings, and live bidding sessions. Designed to simulate real-world auction dynamics while maintaining data integrity and user accountability.",
@@ -87,6 +114,11 @@ const projects = [
   },
   {
     name: "Inventory Management App",
+mainConcepts: [
+                "Inventory Tracking",
+                "Small Business Tool",
+                "Data Syncing"
+              ],
     techStack: ["Next.js", "React", "Firebase", "Material UI", "Git"],
     description:
       "Developed a responsive web application for tracking and managing inventory across multiple categories. It features a clean, intuitive UI with real-time data syncing and user authentication, allowing users to easily add, update, and organize items. Designed for small businesses or personal use, the app combines sleek styling with practical functionality for efficient inventory control.",
@@ -95,6 +127,11 @@ const projects = [
   },
   {
     name: "Towers of Hanoi",
+mainConcepts: [
+                "Educational Tool",
+                "Interactive",
+                "Algorithm Visualizer"
+              ],
     techStack: ["Java (JDK 8+)", "JavaFX", "WindowBuilder", "Git"],
     description:
       "Developed a visual and interactive Java application that illustrates the classic recursive algorithm. Built with two engineers, it uses JavaFX and a GUI designed in WindowBuilder to display each step of the disk movement between pegs, helping beginners understand recursion and problem-solving through real-time visualization. Serves as both an educational tool and algorithm visualizer.",
@@ -103,6 +140,10 @@ const projects = [
   },
   {
     name: "Westcoast Classics",
+mainConcepts: [
+                "E-Commerce",
+                "User Authentication",
+              ],
     techStack: ["JavaScript", "HTML", "CSS", "Git"],
     description:
       "Developed a modern, user-friendly platform that allows users to browse a wide selection of popular cars. It supports user authentication via cookies, enabling seamless sign-in or registration. The site offers a streamlined browsing experience, helping users easily explore and compare vehicles for a smooth and efficient shopping journey.",
@@ -164,6 +205,18 @@ export default function Projects() {
                 <h3 className="text-xl text-white font-semibold mb-2">
                   {project.name}
                 </h3>
+                {/* ---------------------------- */}
+                <div className="flex flex-wrap gap-2 mb-2">
+                  {project.mainConcepts.map((concept, index) => (
+                    <span
+                      key={index}
+                      className="bg-purple-500/10 text-purple-400 px-3 py-1 rounded-full text-sm"
+                    >
+                      {concept}
+                    </span>
+                  ))}
+                </div>
+                {/* ---------------------------- */}
                 <p className="text-gray-400 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.techStack.map((technology, index) => (
