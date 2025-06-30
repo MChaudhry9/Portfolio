@@ -38,6 +38,9 @@ const projects = [
     techStack: [
       "Flask",
       "React",
+      "RESTful API",
+      "Google Maps API", 
+      "NYC Open Data",
       "Supabase",
       "Figma",
       "Vercel",
@@ -52,7 +55,30 @@ const projects = [
 
   },
   {
-    name: "Swebay: An e-bidding platform",
+    name: "FoodScrap Drop-Off",
+    techStack: [
+      "React", 
+      "NYC Open Data API", 
+      "Pandas", 
+      "Matplotlib", 
+      "NumPy", 
+      "Seaborn",
+      "Mapbox API", 
+      "Vite", 
+      "Jupyter Notebook", 
+      "Tailwind CSS", 
+      "Figma", 
+      "Git"
+    ],
+    description:
+      "Developed a web application in 72 hours as a team of three engineers, designed to help NYC residents locate local food scrap drop-off sites and promote composting efforts. Leveraging NYC Open Data, we conducted exploratory data analysis (EDA) using Pandas and NumPy to extract borough-level insights, and visualized patterns with Matplotlib and Seaborn to inform UX decisions. The platform features an interactive Mapbox map that displays drop-off locations with key details like operating hours and accepted materials. By encouraging community participation in composting, the app supports environmental sustainability and helps reduce landfill waste across the city.",
+    imageUrl: "/images/food.png",
+    githubUrl: "https://github.com/MChaudhry9/FoodScrapDropOffSite",
+    demoUrl: "https://playful-longma-0172bc.netlify.app/",
+
+  },
+  {
+    name: "Swebay: An E-Bidding Platform",
     techStack: ["Django", "Python", "HTML", "CSS", "Javascript", "Git"],
     description:
       "Collaborated in a team of 4 to create a secure online bidding platform where users can list items, place bids, and complete transactions. Built with multiple user roles (e.g., Registered Users, Super Users, VIPs) and includes features like bot-prevention, complaint handling, user ratings, and live bidding sessions. Designed to simulate real-world auction dynamics while maintaining data integrity and user accountability.",
