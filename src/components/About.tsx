@@ -36,7 +36,7 @@ export default function About() {
           {/* Feature boxes section */}
           <div className="mt-16 space-y-6">
             <motion.div
-              className="flex items-start space-x-4 p-6 bg-gray-900 rounded-xl border border-gray-800 hover:border-gray-700 transition-all"
+              className="flex items-start gap-4 bg-white/5 rounded-xl p-8 hover:bg-white/10 transition-colors"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
@@ -52,7 +52,7 @@ export default function About() {
             </motion.div>
 
             <motion.div
-              className="flex items-start space-x-4 p-6 bg-gray-900 rounded-xl border border-gray-800 hover:border-gray-700 transition-all"
+              className="flex items-start gap-4 bg-white/5 rounded-xl p-8 hover:bg-white/10 transition-colors"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -68,7 +68,7 @@ export default function About() {
             </motion.div>
 
             <motion.div
-              className="flex items-start space-x-4 p-6 bg-gray-900 rounded-xl border border-gray-800 hover:border-gray-700 transition-all"
+              className="flex items-start gap-4 bg-white/5 rounded-xl p-8 hover:bg-white/10 transition-colors"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
