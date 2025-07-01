@@ -5,7 +5,6 @@ import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { RiExternalLinkLine } from "react-icons/ri";
 import Link from "next/link";
-import { Star } from "lucide-react";
 
 const projects = [
   {
@@ -72,12 +71,13 @@ mainConcepts: [
   },
   {
     name: "FoodScrap Drop-Off",
-mainConcepts: [
-                "Accessibility",
-                "Public Data",
-                "Social Good",
-                "Data Science"
-              ],
+    highlight: "⭐ 1st Place – Open Data Science Hackathon",
+    mainConcepts: [
+                    "Accessibility",
+                    "Public Data",
+                    "Social Good",
+                    "Data Science"
+                  ],
     techStack: [
       "React", 
       "NYC Open Data API", 
@@ -205,6 +205,12 @@ export default function Projects() {
                 <h3 className="text-xl text-white font-semibold mb-2">
                   {project.name}
                 </h3>
+                {/* ---------------------------------- */}
+                {project.highlight && (
+                  <p className="text-yellow-400 font-medium mb-2 text-sm">
+                    {project.highlight}
+                  </p>
+                )}
                 {/* ---------------------------- */}
                 <div className="flex flex-wrap gap-2 mb-2">
                   {project.mainConcepts.map((concept, index) => (
