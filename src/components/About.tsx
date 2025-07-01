@@ -19,8 +19,11 @@ export default function About() {
           <div>
             <p className="text-xl text-gray-300 leading-relaxed">
               Im a senior Computer Science student at The City College of New York, graduating in May 2026. Driven by the 
-              power of technology to create meaningful change, I’m passionate about leveraging software engineering and 
-              data science to solve real-world problems and promote social good.
+              power of technology to create meaningful change, I’m passionate about leveraging 
+              <span className="text-blue-400"> software engineering </span>
+              and 
+              <span className="text-green-400"> data science </span>
+              to solve real-world problems and promote social good.
             </p>
             <p className="text-xl text-gray-300 mt-6 leading-relaxed">
               Currently a software engineer fellow at CCNY, I focus on building tools that not only address complex challenges 
