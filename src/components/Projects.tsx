@@ -9,6 +9,7 @@ import Link from "next/link";
 const projects = [
   {
     name: "Buddy Walk: An AI-Powered Personalized Travel Assistant App",
+    highlight: "⭐ CUNY Student Inclusion Initiatives Award",
     mainConcepts: [
                     "Assistive Technology",
                     "Customer Discovery",
