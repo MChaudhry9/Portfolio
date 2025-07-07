@@ -29,9 +29,9 @@ export default function RootLayout({
         {children}
         <Footer />
       </body>
-      {/* add ur own google tag for google analytic */}
-      {/* <GoogleTagManager gtmId="GTM-W429N5L3" />
-      <GoogleAnalytics gaId="G-4Q2WXQ8EPK" /> */}
+      {/* add ur own google tag for google analytics reports*/}
+      {/* <GoogleTagManager gtmId="add here" />
+      <GoogleAnalytics gaId="add here" /> */}
     </html>
   );
 }
