@@ -18,7 +18,7 @@ export default function About() {
           <h2 className="text-4xl font-bold text-white text-center mb-12">About Me</h2>
           <div>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Im a senior Computer Science student at The City College of New York, graduating in May 2026. Driven by the 
+              I'm a senior Computer Science student at The City College of New York, graduating in December 2026. Driven by the 
               power of technology to create meaningful change, I’m passionate about leveraging 
               <span className="text-blue-400"> software engineering </span>
               and 

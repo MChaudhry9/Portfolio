@@ -58,6 +58,23 @@ const Hero = () => {
             </motion.a>
           </div>
         </motion.div>
+
+        <motion.div
+          className=""
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <div className="w-3/4 lg:w-full mx-auto sm:mx-8">
+            <Image
+              src="/images/gif.gif"
+              alt="Shohruz Ernazarov speaking at one of his club events"
+              width={400}
+              height={300}
+              className="rounded-2xl shadow-2xl object-cover"
+            />
+          </div>
+        </motion.div>
         
       </div>
       <motion.div

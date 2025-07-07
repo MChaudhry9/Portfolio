@@ -31,7 +31,7 @@ const skillCategories = [
       { name: "Firebase", icon: "/images/firebase.png" },
       { name: "C++", icon: "/images/cpp.png" },
       { name: "Java", icon: "/images/java.png" },
-      { name: "RESTful API", icon: "/images/rest.png" },
+      { name: "REST API", icon: "/images/rest.png" },
       { name: "MVC Architecture", icon: "/images/mvc.png" },
     ],
   },
@@ -167,5 +167,6 @@ export default function Skills() {
         </div>
       </div>
     </section>
+
   );
 }
