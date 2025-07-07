@@ -64,7 +64,7 @@ const skillCategories = [
       { name: "Seaborn", icon: "/images/seaborn.jpg" },
       { name: "NYC Open Data", icon: "/images/open.png" },
       { name: "NetworkX", icon: "/images/network.png" },
-      { name: "Sci-kit Learn", icon: "/images/sci.png" },
+      { name: "Scikit-learn", icon: "/images/sci.png" },
     ],
   },
 ];
