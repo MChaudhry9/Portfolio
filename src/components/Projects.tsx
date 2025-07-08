@@ -107,10 +107,10 @@ mainConcepts: [
                 "Fraud Prevention",
                 "Scalable App"
               ],
-    techStack: ["Django", "Python", "HTML", "CSS", "Javascript", "Git"],
+    techStack: ["Django", "Python", "HTML", "Tailwind CSS", "Git"],
     description:
       "Collaborated in a team of 4 to create a secure online bidding platform where users can list items, place bids, and complete transactions. Built with multiple user roles (e.g., Registered Users, Super Users, VIPs) and includes features like bot-prevention, complaint handling, user ratings, and live bidding sessions. Designed to simulate real-world auction dynamics while maintaining data integrity and user accountability.",
-    imageUrl: "/images/swebay2.png",
+    imageUrl: "/images/swebay3.png",
     githubUrl: "https://github.com/MChaudhry9/ecom-bidding-csc322",
   },
   {
