@@ -47,7 +47,7 @@ const skillCategories = [
       { name: "Docker", icon: "/images/docker.png" },
       { name: "Vercel", icon: "/images/vercel.svg" },
       { name: "Postman", icon: "/images/postman.png" },
-      { name: "Visual Studio Code", icon: "/images/vs.png" },
+      { name: "VS Code", icon: "/images/vs.png" },
       { name: "PyCharm", icon: "/images/pycharm.png" },
       { name: "Google Maps API", icon: "/images/maps2.png" },
       { name: "Unix/Linux", icon: "/images/unix.png" },

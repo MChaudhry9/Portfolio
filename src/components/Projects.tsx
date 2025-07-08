@@ -13,14 +13,14 @@ const projects = [
     mainConcepts: [
                     "Assistive Technology",
                     "Customer Discovery",
+                    "Computer Vision",
                     "Accessibility",
                     "AI",
                     "Multimodal",
                     "LLMs"
                   ],
     techStack: [
-      "Computer Vision",
-      "AI",
+      "OpenAI",
       "Google Maps API",
       "Web Speech API",
       "React",
@@ -32,7 +32,7 @@ const projects = [
       "Node.js",
       "Docker",
       "Figma",
-      "Google Cloud Platform",
+      "GCP",
       "Agile",
       "Git",
     ],
@@ -81,7 +81,7 @@ mainConcepts: [
                   ],
     techStack: [
       "React", 
-      "NYC Open Data API", 
+      "NYC Open Data", 
       "Pandas", 
       "Matplotlib", 
       "NumPy", 
@@ -110,7 +110,7 @@ mainConcepts: [
     techStack: ["Django", "Python", "HTML", "CSS", "Javascript", "Git"],
     description:
       "Collaborated in a team of 4 to create a secure online bidding platform where users can list items, place bids, and complete transactions. Built with multiple user roles (e.g., Registered Users, Super Users, VIPs) and includes features like bot-prevention, complaint handling, user ratings, and live bidding sessions. Designed to simulate real-world auction dynamics while maintaining data integrity and user accountability.",
-    imageUrl: "/images/swebay.png",
+    imageUrl: "/images/swebay2.png",
     githubUrl: "https://github.com/MChaudhry9/ecom-bidding-csc322",
   },
   {
