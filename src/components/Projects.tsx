@@ -26,7 +26,7 @@ const projects = [
       "React",
       "Typescript",
       "Vite",
-      "Material UI",
+      "MaterialUI",
       "MongoDB",
       "Firebase",
       "Node.js",
@@ -120,7 +120,7 @@ mainConcepts: [
                 "Small Business Tool",
                 "Data Syncing"
               ],
-    techStack: ["Next.js", "React", "Firebase", "Material UI", "Git"],
+    techStack: ["Next.js", "React", "Firebase", "MaterialUI", "Git"],
     description:
       "Developed a responsive web application for tracking and managing inventory across multiple categories. It features a clean, intuitive UI with real-time data syncing and user authentication, allowing users to easily add, update, and organize items. Designed for small businesses or personal use, the app combines sleek styling with practical functionality for efficient inventory control.",
     imageUrl: "/images/placeholder.png",
