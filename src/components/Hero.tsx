@@ -68,7 +68,7 @@ const Hero = () => {
           <div className="w-3/4 lg:w-full mx-auto sm:mx-8">
             <Image
               src="/images/gif.gif"
-              alt="Shohruz Ernazarov speaking at one of his club events"
+              alt="ones and zeros"
               width={400}
               height={300}
               className="rounded-2xl shadow-2xl object-cover"

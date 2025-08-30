@@ -7,6 +7,14 @@ import Link from "next/link";
 const experiences = [
   {
     title: "Software Engineer Fellow",
+    company: "CodePath",
+    date: "September 2025 - Present",
+    description:
+      "Selected for a competitive 10-week fellowship focused on technical interview preparation. Strengthening efficiency in data structures, algorithms, dynamic programming, and Python problem-solving to enhance analytical thinking and technical communication.",
+    logo: "/images/codepath.jpg",
+  },
+  {
+    title: "Software Engineer Fellow",
     company: "The City College of New York",
     date: "January 2025 - Present",
     description:
