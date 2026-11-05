@@ -46,8 +46,8 @@ const Hero = () => {
               <FaLinkedin size={30} />
             </motion.a>
             <motion.a
-              href="/Mamuna_Chaudhry_Resume.pdf"
-              download="Mamuna_Chaudhry_Resume"
+              href="/Mamuna_Chaudhry_resume.pdf"
+              download="Mamuna_Chaudhry_resume"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}

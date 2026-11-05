@@ -3,6 +3,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const publications = [
   {
@@ -11,11 +12,12 @@ const publications = [
     date: "2026",
     type: "Journal on Technology & Persons with Disabilities",
     description:
-      "Research on Buddy Walk, an AI-powered assistive technology application designed to help Blind and Low-Vision (BLV) individuals navigate their surroundings more independently. The study explores multimodal AI, accessible navigation, and user-centered design to improve travel experiences for individuals with visual impairments.",
+      "Research on Buddy Walk, an AI-powered assistive technology application designed to help Blind and Low-Vision (BLV) individuals navigate their surroundings more independently. The study explores multimodal AI, accessible navigation, and user-centered design to improve travel experiences for individuals with visual impairments. Journal on Technology & Persons with Disabilities Volume 14, 2026, Robles, A., (Eds): CSUN Assistive Technology Conference © 2026 California State University, Northridge, pp. 1-17. ",
     award:
       "Recipient of the Dr. Arthur I. Karshmer Award – Best Paper in Assistive Technology Research",
     link: "https://scholarworks.calstate.edu/concern/publications/1v53k6791",
     journalLink: "https://csun.at/draftvol14",
+    image: "/images/csun.jpg",
   },
 ];
 
@@ -26,6 +28,7 @@ const awards = [
     date: "2025",
     description:
       "Recognized for supporting assistive technology research and education.",
+    image: "/images/cuny.png",
   },
 ];
 
@@ -49,8 +52,18 @@ export default function Publications() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-            >
-              <div className="mb-5 flex gap-3">
+              >
+              <div className="mb-5 flex justify-center">
+              <Image
+                src={publication.image}
+                alt="CSUN Assistive Technology Conference"
+                width={140}
+                height={90}
+                className="rounded-lg object-contain"
+              />
+            </div>
+            
+              <div className="mb-5 flex justify-center gap-3 flex-wrap">
               <span className="text-yellow-400 bg-yellow-400/10 px-4 py-2 rounded-full text-sm font-semibold">
                 Publication
               </span>
@@ -114,7 +127,16 @@ export default function Publications() {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <div className="mb-5">
+              <div className="mb-5 flex justify-center">
+              <Image
+                src={award.image}
+                alt="CUNY Student Inclusion Initiatives Award"
+                width={140}
+                height={90}
+                className="rounded-lg object-contain"
+              />
+            </div>
+              <div className="mb-5 flex justify-center">
                 <span className="text-yellow-400 bg-yellow-400/10 px-4 py-2 rounded-full text-sm font-semibold">
                   🏅 Recognition
                 </span>
