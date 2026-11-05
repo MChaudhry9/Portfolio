@@ -10,6 +10,10 @@ const projects = [
   {
     name: "Buddy Walk: An AI-Powered Personalized Travel Assistant App",
     highlight: "⭐ CUNY Student Inclusion Initiatives Award",
+    publicationUrl:
+    "https://scholarworks.calstate.edu/concern/publications/1v53k6791",
+    publicationLabel: "🏆 Best Paper Award – Published Research",
+
     mainConcepts: [
                     "Assistive Technology",
                     "Customer Discovery",
@@ -213,6 +217,13 @@ export default function Projects() {
                   </p>
                 )}
                 {/* ---------------------------- */}
+                {project.publicationLabel && (
+                  <p className="text-yellow-400 font-medium mb-2 text-sm">
+                    {project.publicationLabel}
+                  </p>
+                )}
+                {/* ---------------------------- */}
+
                 <div className="flex flex-wrap gap-2 mb-2">
                   {project.mainConcepts.map((concept, index) => (
                     <span
@@ -225,6 +236,17 @@ export default function Projects() {
                 </div>
                 {/* ---------------------------- */}
                 <p className="text-gray-400 mb-4">{project.description}</p>
+                {/* Published Research Link */}
+                {project.publicationUrl && (
+                  <Link
+                    href={project.publicationUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-blue-400 hover:text-blue-300 font-semibold text-sm mb-5 transition-colors"
+                  >
+                    📄 Read Published Research →
+                  </Link>
+                )}
                 <div className="flex flex-wrap gap-2">
                   {project.techStack.map((technology, index) => (
                     <span

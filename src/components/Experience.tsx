@@ -5,18 +5,18 @@ import Image from "next/image";
 import Link from "next/link";
 
 const experiences = [
-  {
-    title: "Software Engineer Fellow",
-    company: "CodePath",
-    date: "September 2025 - Present",
-    description:
-      "Selected for a competitive 10-week fellowship focused on technical interview preparation. Strengthening efficiency in data structures, algorithms, dynamic programming, and Python problem-solving to enhance analytical thinking and technical communication.",
-    logo: "/images/codepath.jpg",
-  },
+  // {
+  //   title: "Software Engineer Fellow",
+  //   company: "CodePath",
+  //   date: "September 2025 - Present",
+  //   description:
+  //     "Selected for a competitive 10-week fellowship focused on technical interview preparation. Strengthening efficiency in data structures, algorithms, dynamic programming, and Python problem-solving to enhance analytical thinking and technical communication.",
+  //   logo: "/images/codepath.jpg",
+  // },
   {
     title: "Software Engineer Fellow",
     company: "The City College of New York",
-    date: "January 2025 - Present",
+    date: "January 2025 - September 2025",
     description:
       "Developing a web application to help Blind & Low Vision (BLV) users travel independently, with a focus on optimizing performance and accessibility. Integrated a new Text-to-Speech API, cutting response time by an average 50%, and led user research through interviews and testing at vision rehabilitation centers in NYC. Analyzing qualitative and quantitative user data to develop a research paper on assistive technology and inclusive design.",
     logo: "/images/ccny4.jpg",

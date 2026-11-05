@@ -5,7 +5,13 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { X, Menu } from "lucide-react";
 
-const navbarItems = ["About", "Experience", "Projects", "Skills"];
+const navbarItems = [
+  { name: "About", href: "#about" },
+  { name: "Experience", href: "#experience" },
+  { name: "Projects", href: "#projects" },
+  { name: "Publications & Awards", href: "#publications" },
+  { name: "Skills", href: "#skills" },
+];
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -39,13 +45,13 @@ const Navbar = () => {
               {navbarItems.map((item, index) => (
                 <motion.a
                   key={index}
-                  href={`#${item.toLowerCase()}`}
+                  href={item.href}
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
                   className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors"
                 >
-                  {item}
+                  {item.name}
                 </motion.a>
               ))}
             </div>
