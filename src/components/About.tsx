@@ -18,7 +18,7 @@ export default function About() {
           <h2 className="text-4xl font-bold text-white text-center mb-12">About Me</h2>
           <div>
             <p className="text-xl text-gray-300 leading-relaxed">
-              I'm a senior Computer Science student at The City College of New York, graduating in December 2026. Driven by the 
+              I'm a senior Computer Science student at The City College of New York, graduating in December 2027. Driven by the 
               power of technology to create meaningful change, I’m passionate about leveraging 
               <span className="text-blue-400"> software engineering </span>
               and 
@@ -26,8 +26,9 @@ export default function About() {
               to solve real-world problems and promote social good.
             </p>
             <p className="text-xl text-gray-300 mt-6 leading-relaxed">
-              Currently a software engineer fellow at CCNY, I focus on building tools that not only address complex challenges 
-              but also improve accessibility and quality of life for those who need it most. My work centers on using data and 
+              During my time as a software engineer research fellow at CCNY, I worked on research that focused on building tools that not only address complex challenges 
+              but also improve accessibility and quality of life for those who need it most. This led to a publication at CSUN 2026 on assistive tech, that became the 
+              recipient of the Dr. Arthur I. Karshmer Award, Best Paper in Assistive Technology Research. My work centers on using data and 
               automation to streamline tedious tasks, designing intuitive solutions, and ensuring technology 
               is inclusive—serving everyone regardless of background or ability.
             </p>
