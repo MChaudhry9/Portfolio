@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from "react";
@@ -18,13 +19,15 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    });
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
@@ -40,11 +43,13 @@ const Navbar = () => {
               Mamuna
             </Link>
           </motion.div>
+
+          {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="flex items-center space-x-8">
               {navbarItems.map((item, index) => (
                 <motion.a
-                  key={index}
+                  key={item.name}
                   href={item.href}
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -56,6 +61,8 @@ const Navbar = () => {
               ))}
             </div>
           </div>
+
+          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -67,17 +74,23 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
+      {/* Mobile Navigation */}
       {isMenuOpen && (
-        <motion.div className="md:hidden" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }}>
+        <motion.div
+          className="md:hidden"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+        >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black/90 backdrop-blur-sm">
             {navbarItems.map((item) => (
               <Link
-                key={item}
-                href={`#${item.toLowerCase()}`}
+                key={item.name}
+                href={item.href}
                 className="text-gray-300 hover:text-white block px-3 py-2 font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
-                {item}
+                {item.name}
               </Link>
             ))}
           </div>
